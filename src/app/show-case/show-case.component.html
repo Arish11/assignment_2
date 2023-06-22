@@ -1,0 +1,6 @@
+
+<p>show-case works!</p>
+
+<input type="text" [(ngModel)]="userName" (input)="checkUserName($event)"> 
+<p>The name of the user is {{userName}} </p>
+<button class="btn btn-danger" (click)="resetButton()" [disabled]="userNameEmpty"> RESET</button>
